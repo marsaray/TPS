@@ -25,7 +25,7 @@
             <br />
             <br />
             <br />
-            <asp:Button ID="btnSubmit" runat="server" Text="Submit" />
+            <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Submit" />
         </asp:Panel>
     </form>
 </body>
