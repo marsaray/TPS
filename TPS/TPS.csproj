@@ -168,6 +168,7 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\clsBuisnessLayer.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -191,6 +192,7 @@
     <Compile Include="Contracts.aspx.designer.cs">
       <DependentUpon>Contracts.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_Code\clsDataLayer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
