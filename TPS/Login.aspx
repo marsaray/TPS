@@ -6,17 +6,22 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
-        #form1 {
-            height: 520px;
+        #Login {
+            border:thick;
+            font-family:sans-serif;
+            align-content: center;
+            padding-left: 600px;
+            padding-top: 200px;
         }
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <asp:Panel ID="Panel1" runat="server" Height="477px" style="margin-top: 22px">
+    <nav><a href="">Home</a></nav>
+    <form id="Login" runat="server">
+            <img src="images/generic-logo.jpg" />
             <asp:Label ID="label" runat="server" Text="Username:"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="txtUserName" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtUserName" runat="server" style= "margin-left: -2px " Width="120px"></asp:TextBox>
             <br />
             <asp:Label ID="Label2" runat="server" Text="Password:"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -26,7 +31,9 @@
             <br />
             <br />
             <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Submit" />
-        </asp:Panel>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="btnForgot" runat="server" Text="Forgot Password" />
     </form>
+    <footer><a href =" ">Legal</a>&nbsp;<a href =" ">Contact Us</a>&nbsp;<a href =" ">Locations</a>&nbsp;<a href =" ">General</a></footer>
 </body>
 </html>
