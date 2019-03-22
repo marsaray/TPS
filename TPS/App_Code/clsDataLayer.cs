@@ -8,11 +8,12 @@ using System.Data;
 
 /// this is code from my other class I'm using as a guide
 /// we will be basically using this as it's perfectly good for getting items from a database
-/// 
+
 namespace TPS.App_Code
 {
     public class clsDataLayer
     {
+        /*
         // This function verifies a user in the tblUser table
         public static dsUserLogin VerifyUser(string Database, string UserName, string UserPassword)
         {
@@ -201,5 +202,7 @@ namespace TPS.App_Code
             }
             return IP4Address;
         }
+    }
+*/
     }
 }
