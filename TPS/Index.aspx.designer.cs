@@ -76,12 +76,21 @@ namespace TPS {
         protected global::System.Web.UI.WebControls.HyperLink lnkContracts;
         
         /// <summary>
-        /// ImageButton4 control.
+        /// imgStaffRequest control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton4;
+        protected global::System.Web.UI.WebControls.ImageButton imgStaffRequest;
+        
+        /// <summary>
+        /// lnkStaffRequest control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink lnkStaffRequest;
     }
 }

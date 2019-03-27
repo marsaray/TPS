@@ -129,6 +129,7 @@
     <Content Include="images\contract.png" />
     <Content Include="images\generic-logo.jpg" />
     <Content Include="images\staff.jpg" />
+    <Content Include="images\staffingrequest.jpg" />
     <Content Include="images\user.png" />
     <Content Include="Index.aspx" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />

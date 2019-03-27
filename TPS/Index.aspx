@@ -42,8 +42,11 @@
             &nbsp;<asp:HyperLink ID="lnkContracts" runat="server">Contracts</asp:HyperLink>
             </p>
             <p>
-                <asp:ImageButton ID="ImageButton4" runat="server" />
+                <asp:ImageButton ID="imgStaffRequest" runat="server" CssClass="Images" Height="50px" ImageUrl="~/images/staffingrequest.jpg" />
+            &nbsp;<asp:HyperLink ID="lnkStaffRequest" runat="server">Staffing Request</asp:HyperLink>
             </p>
+            <p>
+                &nbsp;</p>
         </div>
     </form>
     <footer>Links go here</footer>
