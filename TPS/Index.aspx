@@ -6,14 +6,18 @@
 <head runat="server">
     <style>
         body{
-            flex:inherit;
-            align-content: center;
             font-family:sans-serif;
             text-align: center;
         }
         h1{
             vertical-align:central;
             font-size: 32px;
+        }
+        .Images{
+            display: block;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
     <title></title>
@@ -25,13 +29,17 @@
             <img src ="images/generic-logo.jpg" style="height: 133px; width: 537px" />
             <h1>Navigation</h1>
             <p>
-                <asp:ImageButton ID="ImageButton1" runat="server" />
+                <asp:ImageButton ID="btnUser" runat="server" Height="50px" ImageUrl="~/images/user.png" Width="61px" CssClass="Images" />
+                &nbsp;<asp:HyperLink ID="lnkUserManagement" runat="server">User Management</asp:HyperLink>
+            </p>
+            
+            <p>
+                <asp:ImageButton ID="btnStaff" runat="server" CssClass="Images" Height="50px" ImageUrl="~/images/staff.jpg" Width="56px" />
+            &nbsp;<asp:HyperLink ID="lnkStaff" runat="server">Staff</asp:HyperLink>
             </p>
             <p>
-                <asp:ImageButton ID="ImageButton2" runat="server" />
-            </p>
-            <p>
-                <asp:ImageButton ID="ImageButton3" runat="server" />
+                <asp:ImageButton ID="btnContracts" runat="server" CssClass="Images" Height="50px" ImageUrl="~/images/contract.png" />
+            &nbsp;<asp:HyperLink ID="lnkContracts" runat="server">Contracts</asp:HyperLink>
             </p>
             <p>
                 <asp:ImageButton ID="ImageButton4" runat="server" />

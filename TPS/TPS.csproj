@@ -126,7 +126,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="images\contract.png" />
     <Content Include="images\generic-logo.jpg" />
+    <Content Include="images\staff.jpg" />
+    <Content Include="images\user.png" />
     <Content Include="Index.aspx" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
