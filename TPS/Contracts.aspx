@@ -11,23 +11,12 @@
 <body>
     <style>
         body {
-            background-color: red
+           
         }
     </style>
     <form id="form1" runat="server">
-        <div>
-            
-            <asp:HyperLink ID="HyperLink1" runat="server">HyperLink</asp:HyperLink>
-            
+        <div>      
         </div>
-    <input = "button" name =" Hello" onclick = "doVerification()"/>
-        <asp:Button ID="Button1" runat="server" Text="Button" />
     </form>
     </body>
-    <script>
-        function doVerification() {
-            var turtle = 23;
-            console.log(turtle);
-        }
-    </script>
 </html>
