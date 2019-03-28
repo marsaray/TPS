@@ -13,13 +13,13 @@ namespace TPS {
     public partial class WebForm1 {
         
         /// <summary>
-        /// form1 control.
+        /// frmIndex control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm frmIndex;
         
         /// <summary>
         /// btnUser control.
@@ -92,5 +92,23 @@ namespace TPS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink lnkStaffRequest;
+        
+        /// <summary>
+        /// imgStaffRequestList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton imgStaffRequestList;
+        
+        /// <summary>
+        /// lnkStaffRequestList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink lnkStaffRequestList;
     }
 }
