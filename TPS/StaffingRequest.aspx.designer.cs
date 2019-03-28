@@ -10,7 +10,7 @@
 namespace TPS {
     
     
-    public partial class UserManagement {
+    public partial class WebForm2 {
         
         /// <summary>
         /// form1 control.
@@ -22,15 +22,6 @@ namespace TPS {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// lnkHome control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lnkHome;
-        
-        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -40,13 +31,13 @@ namespace TPS {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// txtUserName control.
+        /// txtClientID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUserName;
+        protected global::System.Web.UI.WebControls.TextBox txtClientID;
         
         /// <summary>
         /// Label2 control.
@@ -58,13 +49,13 @@ namespace TPS {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// txtPassword control.
+        /// txtType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPassword;
+        protected global::System.Web.UI.WebControls.TextBox txtType;
         
         /// <summary>
         /// Label3 control.
@@ -76,30 +67,39 @@ namespace TPS {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// DropDownList1 control.
+        /// txtLocation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.TextBox txtLocation;
         
         /// <summary>
-        /// btnAddUser control.
+        /// Label4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddUser;
+        protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
-        /// GridView1 control.
+        /// txtStatus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.TextBox txtStatus;
+        
+        /// <summary>
+        /// btnAdd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAdd;
     }
 }

@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <link rel ="stylesheet" type ="text/css" href="CSS/main.css" />
-    <title></title>
+    <title>Contracts</title>
 </head>
     <!-- This is the contract form that will show the contract database -->
 <body>

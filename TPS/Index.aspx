@@ -11,7 +11,7 @@
             font-size: 32px;
         }
     </style>
-    <title></title>
+    <title>Index</title>
 </head>
 <body style="height: 720px; width: 1792px">
     <nav>Links go here</nav>

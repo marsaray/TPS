@@ -18,16 +18,20 @@
     <nav></nav>
         <div>
             <img src ="images/generic-logo.jpg" style="height: 133px; width: 537px" /><br />
-&nbsp;<img src ="images/user.png" height="50" style="height: 86px; width: 92px" /><h1>User Management</h1>
+&nbsp;<img src ="images/user.png" height="50" style="height: 86px; width: 92px" />
+            <h1>User Management</h1>
             <h3> Add User</h3>
             <p> 
-                <asp:Label ID="Label1" runat="server" Text="Name:"></asp:Label>
-&nbsp;<asp:TextBox ID="txtUserName" runat="server"></asp:TextBox>
+                <asp:Label ID="Label1" runat="server" Text="Name:" CssClass="Labels"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txtUserName" runat="server" CssClass="Inputs"></asp:TextBox>
             </p>
-            <p> Password: <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
+            <p> &nbsp;<asp:Label ID="Label2" runat="server" CssClass="Labels" Text="Password: "></asp:Label>
+&nbsp;<asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="Inputs"></asp:TextBox>
             </p>
-            <p> Security Level:
-                <asp:DropDownList ID="DropDownList1" runat="server">
+            <p> 
+                <asp:Label ID="Label3" runat="server" Text="Access Code: "></asp:Label>
+&nbsp;&nbsp;&nbsp;
+                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="Inputs">
                     <asp:ListItem>1</asp:ListItem>
                     <asp:ListItem>2</asp:ListItem>
                     <asp:ListItem>3</asp:ListItem>

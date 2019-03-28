@@ -32,3 +32,16 @@
     top: 0px;
     left: 0px;
 }
+
+.Labels{
+    display: inline-block;
+    float: initial;
+    width: auto;
+}
+
+.Inputs {
+    display: inline-flex;
+    float: initial;
+    width: 50px;
+    padding-left: 50px;
+    }

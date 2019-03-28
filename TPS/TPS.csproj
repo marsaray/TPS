@@ -133,6 +133,7 @@
     <Content Include="images\staffingrequest.jpg" />
     <Content Include="images\user.png" />
     <Content Include="Index.aspx" />
+    <Content Include="StaffingRequest.aspx" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Login.aspx" />
@@ -172,6 +173,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="StaffingRequest.aspx.cs">
+      <DependentUpon>StaffingRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StaffingRequest.aspx.designer.cs">
+      <DependentUpon>StaffingRequest.aspx</DependentUpon>
+    </Compile>
     <Content Include="App_Code\clsBuisnessLayer.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
