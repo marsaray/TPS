@@ -18,5 +18,10 @@ namespace TPS
         {
             //adding a comment
         }
+
+        protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
+        {
+
+        }
     }
 }

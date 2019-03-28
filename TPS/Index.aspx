@@ -21,7 +21,7 @@
             <img src ="images/generic-logo.jpg" style="height: 133px; width: 537px" />
             <h1>Navigation</h1>
             <p>
-                <asp:ImageButton ID="btnUser" runat="server" Height="50px" ImageUrl="~/images/user.png" Width="61px" CssClass="Images" />
+                <asp:ImageButton ID="btnUser" runat="server" Height="50px" ImageUrl="~/images/user.png" Width="61px" CssClass="Images" OnClick="btnUser_Click" PostBackUrl="~/UserManagement.aspx" />
                 &nbsp;<asp:HyperLink ID="lnkUserManagement" runat="server">User Management</asp:HyperLink>
             </p>
             

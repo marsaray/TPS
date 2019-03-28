@@ -18,5 +18,10 @@ namespace TPS
         {
 
         }
+
+        protected void btnAddUser_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

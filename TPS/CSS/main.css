@@ -21,3 +21,14 @@
 #login{
 
 }
+
+.Grid {
+    width: 80%;
+    height: 200px;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    margin: auto;
+    top: 0px;
+    left: 0px;
+}

@@ -10,16 +10,6 @@
         .Nav{
             font-size: 32px;
         }
-        .Grid {
-            width: 80%;
-            height: 200px;
-            position: relative;
-            display: table-cell;
-            vertical-align: middle;
-            margin: auto;
-            top: 0px;
-            left: 0px;
-        }
     </style>
 </head>
 <body>
@@ -44,11 +34,10 @@
                 </asp:DropDownList>
             </p>
             <p> 
-                <asp:Button ID="btnAddUser" runat="server" Text="Add" />
+                <asp:Button ID="btnAddUser" runat="server" Text="Add" OnClick="btnAddUser_Click" />
             </p>
             <h3> Current Users:</h3>
         </div>
-    </form>
     <div>
          <p>
                                 <asp:GridView ID="GridView1" runat="server" CssClass="Grid" OnSelectedIndexChanged="grdUserManagement_SelectedIndexChanged">
@@ -60,6 +49,7 @@
                 </asp:GridView>
             </p>
     </div>
+  </form>
     <footer>Links here</footer>
 </body>
 </html>

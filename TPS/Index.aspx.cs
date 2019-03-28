@@ -13,5 +13,10 @@ namespace TPS
         {
 
         }
+
+        protected void btnUser_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
     }
 }

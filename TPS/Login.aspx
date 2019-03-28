@@ -22,7 +22,7 @@
 <body>
     <form id="Login" runat="server">
             <img class ="Logo" src="images/generic-logo.jpg" style = "height: 133px; width: 537px" />
-            &nbsp;<asp:Login ID="Login1" runat="server" CssClass="Logo">
+            &nbsp;<asp:Login ID="Login1" runat="server" CssClass="Logo" OnAuthenticate="Login1_Authenticate">
             </asp:Login>
 &nbsp;<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -36,4 +36,7 @@
             </form>
     <footer><a href ="www.no.com">Legal</a>&nbsp;<a href ="www.no.com">Contact Us</a>&nbsp;<a href ="www.no.com">Locations</a>&nbsp;<a href ="www.no.com">General</a></footer>
 </body>
+    <script>
+        
+    </script>
 </html>
