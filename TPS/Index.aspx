@@ -4,20 +4,11 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link rel ="stylesheet" type ="text/css" href="CSS/main.css" />
     <style>
-        body{
-            font-family:sans-serif;
-            text-align: center;
-        }
         h1{
             vertical-align:central;
             font-size: 32px;
-        }
-        .Images{
-            display: block;
-            text-align: left;
-            margin-left: auto;
-            margin-right: auto;
         }
     </style>
     <title></title>

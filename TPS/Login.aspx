@@ -6,17 +6,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+   <!-- Main Css Sheet --> 
+    <link rel ="stylesheet" type ="text/css" href="CSS/main.css" />
     <style type="text/css">
-        #Login {
-            border:thick;
-            font-family:sans-serif;
-            align-content: center;
-            padding-left: 600px;
-            padding-top: 200px;
-        }
-        footer{
+        
+        footer{ 
             align-content: center;
         }
+
         header{
             align-content: center;
         }
@@ -24,8 +21,8 @@
 </head>
 <body>
     <form id="Login" runat="server">
-            <img src="images/generic-logo.jpg" />
-            &nbsp;<asp:Login ID="Login1" runat="server">
+            <img class ="Logo" src="images/generic-logo.jpg" style = "height: 133px; width: 537px" />
+            &nbsp;<asp:Login ID="Login1" runat="server" CssClass="Logo">
             </asp:Login>
 &nbsp;<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

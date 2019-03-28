@@ -1,0 +1,23 @@
+﻿body {
+    font-family: sans-serif;
+    font-size: 22px;
+    background-color: ghostwhite;
+    text-align: center;
+}
+
+.Images {
+    display: block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#login{
+
+}

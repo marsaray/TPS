@@ -4,12 +4,9 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link rel ="stylesheet" type ="text/css" href="CSS/main.css" />
     <title></title>
     <style>
-        body{
-            font-family: sans-serif;
-            text-align: center;
-        }
         .Nav{
             font-size: 32px;
         }
@@ -20,6 +17,8 @@
             display: table-cell;
             vertical-align: middle;
             margin: auto;
+            top: 0px;
+            left: 0px;
         }
     </style>
 </head>
@@ -28,8 +27,8 @@
         <asp:LinkButton ID="lnkHome" runat="server" CssClass="Nav" PostBackUrl="~/Index.aspx">Home</asp:LinkButton>
     <nav></nav>
         <div>
-            <img src ="images/generic-logo.jpg" style="height: 153px; width: 446px" /><br />
-&nbsp;<img src ="images/user.png" height="50px" style="height: 86px; width: 92px" /><h1>User Management</h1>
+            <img src ="images/generic-logo.jpg" style="height: 133px; width: 537px" /><br />
+&nbsp;<img src ="images/user.png" height="50" style="height: 86px; width: 92px" /><h1>User Management</h1>
             <h3> Add User</h3>
             <p> 
                 <asp:Label ID="Label1" runat="server" Text="Name:"></asp:Label>
@@ -48,9 +47,11 @@
                 <asp:Button ID="btnAddUser" runat="server" Text="Add" />
             </p>
             <h3> Current Users:</h3>
-
-            <p>
-                                <asp:GridView ID="grdUserManagement" runat="server" CssClass="Grid" OnSelectedIndexChanged="grdUserManagement_SelectedIndexChanged">
+        </div>
+    </form>
+    <div>
+         <p>
+                                <asp:GridView ID="GridView1" runat="server" CssClass="Grid" OnSelectedIndexChanged="grdUserManagement_SelectedIndexChanged">
                     <Columns>
                         <asp:CommandField ShowEditButton="True" />
                         <asp:CommandField ShowSelectButton="True" />
@@ -58,8 +59,7 @@
                     </Columns>
                 </asp:GridView>
             </p>
-        </div>
-    </form>
+    </div>
     <footer>Links here</footer>
 </body>
 </html>

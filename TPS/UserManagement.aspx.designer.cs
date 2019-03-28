@@ -76,12 +76,12 @@ namespace TPS {
         protected global::System.Web.UI.WebControls.Button btnAddUser;
         
         /// <summary>
-        /// grdUserManagement control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdUserManagement;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }
