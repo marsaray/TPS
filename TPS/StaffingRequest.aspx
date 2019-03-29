@@ -19,8 +19,8 @@
     <div id ="header"></div>
     <form id="form1" runat="server">
         <div>
-            <img src ="images/generic-logo.jpg" class ="Logo" />
-            <br />
+            <asp:ImageButton ID="ImageButton1" runat="server" Height="133px" ImageUrl="images/generic-logo.jpg" PostBackUrl="~/Index.aspx" Width="537px" />
+&nbsp;<br />
             <img src ="images/staffingrequest.jpg" style=" height: 86px; width: 92px" />
             <br />
             <h1>Staffing Request</h1>

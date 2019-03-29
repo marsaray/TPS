@@ -20,7 +20,8 @@
     <form id="frmUserManagement" runat="server">
         <div id ="Main">
 
-            <img src="images/generic-logo.jpg" class="Logo" /><br />
+            <asp:ImageButton ID="ImageButton1" runat="server" Height="133px" ImageUrl="images/generic-logo.jpg" PostBackUrl="~/Index.aspx" Width="537px" />
+            <br />
             &nbsp;<img src="images/user.png" height="50" style="height: 86px; width: 92px" />
             <h1>User Management</h1>
             <h3>Add User</h3>

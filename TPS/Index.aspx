@@ -25,8 +25,8 @@
     <div id ="header"></div>
     <form id="frmIndex" runat="server">
         <div id ="Main" style= "height: 755px; width: 1765px; margin-bottom: 61px;">
-            <img src ="images/generic-logo.jpg" class="Logo" />
-            <h1>Navigation</h1>
+            <asp:ImageButton ID="ImageButton1" runat="server" Height="133px" ImageUrl="images/generic-logo.jpg" PostBackUrl="~/Index.aspx" Width="537px" />
+&nbsp;<h1>Navigation</h1>
             <p>
                 <asp:ImageButton ID="btnUser" runat="server" Height="50px" ImageUrl="~/images/user.png" Width="61px" CssClass="Images" OnClick="btnUser_Click" PostBackUrl="~/UserManagement.aspx" />
                 &nbsp;<asp:HyperLink ID="lnkUserManagement" runat="server">User Management</asp:HyperLink>

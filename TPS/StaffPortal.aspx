@@ -20,7 +20,7 @@
         <div id="header"></div>
         <div id="Main">
             <p>
-            <asp:ImageButton runat="server" ImageUrl="~/images/generic-logo.jpg" CssClass ="Logo" PostBackUrl="~/Index.aspx"/>
+                <asp:ImageButton ID="ImageButton1" runat="server" Height="133px" ImageUrl="images/generic-logo.jpg" PostBackUrl="~/Index.aspx" Width="537px" />
             </p>
             <p>
                 <img src="images/staff.jpg" class="Icons" />

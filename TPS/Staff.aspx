@@ -22,8 +22,8 @@
     <form id="frmStaff" runat="server">
         <div id="Form">
             <p>
-                <img src="images/generic-logo.jpg" class="Logo" />
-            </p>
+                <asp:ImageButton ID="ImageButton1" runat="server" Height="133px" ImageUrl="images/generic-logo.jpg" PostBackUrl="~/Index.aspx" Width="537px" />
+&nbsp;</p>
             <p>
                 <img src ="images/staff.jpg" class ="Icons" />
             </p>

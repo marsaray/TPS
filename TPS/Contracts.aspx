@@ -18,10 +18,10 @@
     <!-- This is the contract form that will show the contract database -->
 <body>
     <div id ="header"></div>
-    <p>
-    <img src ="images/generic-logo.jpg" class="Logo"/>
-    </p>
     <form id="frmContracts" runat="server">
+    <p>
+        <asp:ImageButton ID="ImageButton1" runat="server" Height="133px" ImageUrl="images/generic-logo.jpg" PostBackUrl="~/Index.aspx" Width="537px" />
+&nbsp;</p>
         <div id ="Form">   
             <p>
                 <img src ="images/staffrequestlist.png" class ="Icons"/>
