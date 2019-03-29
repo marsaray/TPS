@@ -28,7 +28,7 @@
     vertical-align: middle;
     margin: auto;
     top: 0px;
-    left: 0px;
+    left: -1px;
 }
 
 .Labels{
@@ -40,7 +40,6 @@
 .Inputs {
     display: inline-flex;
     float: initial;
-    width: 50px;
     padding-left: 50px;
     border-radius: 2px;
     }
@@ -48,4 +47,10 @@
 .Icons{
     height: 50px;
     width: 60px;
+}
+
+.Buttons {
+    display: inline-block;
+    float: initial;
+    width: auto;
 }

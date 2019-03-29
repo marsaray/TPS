@@ -168,6 +168,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="Staff.aspx" />
     <Content Include="StaffPortal.aspx" />
     <Content Include="UserManagement.aspx" />
     <Content Include="ViewSwitcher.ascx" />
@@ -218,6 +219,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.aspx.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff.aspx.designer.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
     </Compile>
     <Compile Include="StaffPortal.aspx.cs">
       <DependentUpon>StaffPortal.aspx</DependentUpon>

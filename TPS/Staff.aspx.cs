@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace TPS
 {
-    public partial class StaffPortal1 : System.Web.UI.Page
+    public partial class StaffPortal : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

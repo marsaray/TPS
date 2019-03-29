@@ -26,12 +26,17 @@
             <p>
                 <img src ="images/staffrequestlist.png" class ="Icons"/>
             </p>
-           <h1>Contracts List</h1>
+           <h1>Requests List</h1>
             <p>
-                <asp:GridView ID="grdViewContracts" runat="server" CssClass="Grid">
+                <asp:GridView ID="grdViewStaffRequests" runat="server" CssClass="Grid">
+                    <Columns>
+                        <asp:ButtonField ButtonType="Button" Text="Approve" />
+                        <asp:ButtonField ButtonType="Button" Text="Deny" />
+                    </Columns>
                 </asp:GridView>
             </p>
-
+            <h2> Approved Contracts</h2>
+            <asp:GridView ID ="grdViewContracts" runat="server" CssClass="Grid"></asp:GridView>
         </div>
     </form>
     <div id ="footer"></div>
