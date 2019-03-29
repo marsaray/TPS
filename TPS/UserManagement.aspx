@@ -4,47 +4,52 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link rel ="stylesheet" type ="text/css" href="CSS/main.css" />
-    <title></title>
-    <style>
-        .Nav{
-            font-size: 32px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="CSS/main.css" />
+    <title>User Management</title>
+    <script src ="Scripts/jquery-3.3.1.min.js"></script>
+    <script>
+        //Add the header and footer bars
+        $(function () {
+            $("#header").load("addons/header.html");
+            $("#footer").load("addons/footer.html");
+        });
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
         <asp:LinkButton ID="lnkHome" runat="server" CssClass="Nav" PostBackUrl="~/Index.aspx">Home</asp:LinkButton>
-    <nav></nav>
         <div>
-            <img src ="images/generic-logo.jpg" style="height: 133px; width: 537px" /><br />
-&nbsp;<img src ="images/user.png" height="50" style="height: 86px; width: 92px" />
+            <img src="images/generic-logo.jpg" class="Logo" /><br />
+            &nbsp;<img src="images/user.png" height="50" style="height: 86px; width: 92px" />
             <h1>User Management</h1>
-            <h3> Add User</h3>
-            <p> 
+            <h3>Add User</h3>
+            <p>
                 <asp:Label ID="Label1" runat="server" Text="Name:" CssClass="Labels"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txtUserName" runat="server" CssClass="Inputs"></asp:TextBox>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:TextBox ID="txtUserName" runat="server" CssClass="Inputs"></asp:TextBox>
             </p>
-            <p> &nbsp;<asp:Label ID="Label2" runat="server" CssClass="Labels" Text="Password: "></asp:Label>
-&nbsp;<asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="Inputs"></asp:TextBox>
+            <p>
+                &nbsp;<asp:Label ID="Label2" runat="server" CssClass="Labels" Text="Password: "></asp:Label>
+                &nbsp;<asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="Inputs"></asp:TextBox>
             </p>
-            <p> 
+            <p>
                 <asp:Label ID="Label3" runat="server" Text="Access Code: "></asp:Label>
-&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;
                 <asp:DropDownList ID="DropDownList1" runat="server" CssClass="Inputs">
-                    <asp:ListItem>1</asp:ListItem>
-                    <asp:ListItem>2</asp:ListItem>
-                    <asp:ListItem>3</asp:ListItem>
+                    <asp:ListItem>Admin</asp:ListItem>
+                    <asp:ListItem>Manager</asp:ListItem>
+                    <asp:ListItem>Client</asp:ListItem>
+                    <asp:ListItem Value="3">Staff</asp:ListItem>
                 </asp:DropDownList>
             </p>
-            <p> 
+            <p>
                 <asp:Button ID="btnAddUser" runat="server" Text="Add" OnClick="btnAddUser_Click" />
             </p>
-            <h3> Current Users:</h3>
+            <h3>Current Users:</h3>
         </div>
-    <div>
-         <p>
-                                <asp:GridView ID="GridView1" runat="server" CssClass="Grid" OnSelectedIndexChanged="grdUserManagement_SelectedIndexChanged">
+        <div>
+            <p>
+                <asp:GridView ID="GridView1" runat="server" CssClass="Grid" OnSelectedIndexChanged="grdUserManagement_SelectedIndexChanged">
                     <Columns>
                         <asp:CommandField ShowEditButton="True" />
                         <asp:CommandField ShowSelectButton="True" />
@@ -52,8 +57,8 @@
                     </Columns>
                 </asp:GridView>
             </p>
-    </div>
-  </form>
-    <footer>Links here</footer>
+        </div>
+    </form>
+
 </body>
 </html>

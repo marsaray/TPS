@@ -6,37 +6,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Login</title>
-   <!-- Main Css Sheet --> 
-    <link rel ="stylesheet" type ="text/css" href="CSS/main.css" />
-    <style type="text/css">
-        
-        footer{ 
-            align-content: center;
-        }
-
-        header{
-            align-content: center;
-        }
-    </style>
+    <!-- Main Css Sheet -->
+    <link rel="stylesheet" type="text/css" href="CSS/main.css" />
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script>
+        //Add the header and footer bars
+        $(function () {
+            $("#footer").load("addons/footer.html");
+        });
+    </script>
 </head>
 <body>
     <form id="Login" runat="server">
-            <img class ="Logo" src="images/generic-logo.jpg" style = "height: 133px; width: 537px" />
-            &nbsp;<asp:Login ID="Login1" runat="server" CssClass="Logo" OnAuthenticate="Login1_Authenticate">
-            </asp:Login>
-&nbsp;<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            <br />
-            <br />
-            <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </form>
-    <footer><a href ="www.no.com">Legal</a>&nbsp;<a href ="www.no.com">Contact Us</a>&nbsp;<a href ="www.no.com">Locations</a>&nbsp;<a href ="www.no.com">General</a></footer>
+        <img class="Logo" src="images/generic-logo.jpg" />
+        &nbsp;
+        <asp:Login ID="Login1" runat="server" CssClass="Logo" OnAuthenticate="Login1_Authenticate">
+        </asp:Login>
+        &nbsp;
+    </form>
 </body>
-    <script>
-        
-    </script>
+
 </html>

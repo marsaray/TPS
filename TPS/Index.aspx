@@ -12,13 +12,19 @@
         }
     </style>
     <title>Index</title>
+    <script src ="Scripts/jquery-3.3.1.min.js"></script>
+    <script>
+        //Add the header and footer bars
+        $(function () {
+            $("#header").load("addons/header.html");
+            $("#footer").load("addons/footer.html");
+        });
+    </script>
 </head>
 <body style="height: 720px; width: 1792px">
-    <nav>Links go here</nav>
-
     <form id="frmIndex" runat="server">
         <div id ="Main" style= "height: 663px; width: 1765px; margin-bottom: 61px;">
-            <img src ="images/generic-logo.jpg" style="height: 133px; width: 537px" />
+            <img src ="images/generic-logo.jpg" class="Logo" />
             <h1>Navigation</h1>
             <p>
                 <asp:ImageButton ID="btnUser" runat="server" Height="50px" ImageUrl="~/images/user.png" Width="61px" CssClass="Images" OnClick="btnUser_Click" PostBackUrl="~/UserManagement.aspx" />
@@ -46,6 +52,5 @@
             </p>
         </div>
     </form>
-    <footer>Links go here</footer>
 </body>
 </html>

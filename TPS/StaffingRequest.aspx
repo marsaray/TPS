@@ -6,12 +6,19 @@
 <head runat="server">
     <title>Staffing Request</title>
     <link rel ="stylesheet" type ="text/css" href="CSS/main.css" />
+    <script src ="Scripts/jquery-3.3.1.min.js"></script>
+    <script>
+        //Add the header and footer bars
+        $(function () {
+            $("#header").load("addons/header.html");
+            $("#footer").load("addons/footer.html");
+        });
+    </script>
 </head>
 <body>
-    <nav>Links go here</nav>
     <form id="form1" runat="server">
         <div>
-            <img src ="images/generic-logo.jpg" style="height: 133px; width: 537px" />
+            <img src ="images/generic-logo.jpg" class ="Logo" />
             <br />
             <img src ="images/staffingrequest.jpg" style=" height: 86px; width: 92px" />
             <br />
@@ -38,6 +45,5 @@
                 <asp:Button ID ="btnAdd" runat ="server" Text ="Add Request" style ="border-radius:4px"/>
         </div>
     </form>
-    <footer>Links go here</footer>
 </body>
 </html>
