@@ -33,17 +33,17 @@
             </p>
             
             <p>
-                <asp:ImageButton ID="btnStaff" runat="server" CssClass="Images" Height="50px" ImageUrl="~/images/staff.jpg" Width="56px" />
+                <asp:ImageButton ID="btnStaff" runat="server" CssClass="Images" Height="50px" ImageUrl="~/images/staff.jpg" Width="56px" PostBackUrl="~/Staff.aspx" />
             &nbsp;<asp:HyperLink ID="lnkStaff" runat="server">Staff</asp:HyperLink>
             </p>
 
             <p>
-                <asp:ImageButton ID="btnContracts" runat="server" CssClass="Images" Height="50px" ImageUrl="~/images/contract.png" />
+                <asp:ImageButton ID="btnContracts" runat="server" CssClass="Images" Height="50px" ImageUrl="~/images/contract.png" PostBackUrl="~/Contracts.aspx" />
             &nbsp;<asp:HyperLink ID="lnkContracts" runat="server">Contracts</asp:HyperLink>
             </p>
 
             <p>
-                <asp:ImageButton ID="imgStaffRequest" runat="server" CssClass="Images" Height="50px" ImageUrl="~/images/staffingrequest.jpg" />
+                <asp:ImageButton ID="imgStaffRequest" runat="server" CssClass="Images" Height="50px" ImageUrl="~/images/staffingrequest.jpg" PostBackUrl="~/StaffingRequest.aspx" />
             &nbsp;<asp:HyperLink ID="lnkStaffRequest" runat="server">Staffing Request</asp:HyperLink>
             </p>
             
@@ -52,7 +52,7 @@
                 &nbsp;<asp:HyperLink ID ="lnkStaffRequestList" runat="server">Staff Request List</asp:HyperLink>            
             </p>
             <p>
-                <asp:ImageButton ID="imgStaffPortal" runat="server" CssClass="Images" ImageURL="~/images/staff.jpg" Height="50px" />
+                <asp:ImageButton ID="imgStaffPortal" runat="server" CssClass="Images" ImageURL="~/images/staff.jpg" Height="50px" PostBackUrl="~/StaffPortal.aspx" />
                 &nbsp;<asp:HyperLink ID ="HyperLink1" runat="server">Staff Portal</asp:HyperLink>            
             </p>
         </div>
