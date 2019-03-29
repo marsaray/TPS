@@ -24,6 +24,7 @@
         </asp:Login>
         &nbsp;
     </form>
+    <div id ="footer"></div>
 </body>
 
 </html>

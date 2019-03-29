@@ -13,22 +13,13 @@ namespace TPS {
     public partial class UserManagement {
         
         /// <summary>
-        /// form1 control.
+        /// frmUserManagement control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
-        /// <summary>
-        /// lnkHome control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lnkHome;
+        protected global::System.Web.UI.HtmlControls.HtmlForm frmUserManagement;
         
         /// <summary>
         /// Label1 control.

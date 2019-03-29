@@ -20,10 +20,6 @@
     width: 537px
 }
 
-#login{
-
-}
-
 .Grid {
     width: 80%;
     height: 200px;
@@ -48,3 +44,8 @@
     padding-left: 50px;
     border-radius: 2px;
     }
+
+.Icons{
+    height: 50px;
+    width: 60px;
+}

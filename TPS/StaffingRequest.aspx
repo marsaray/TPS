@@ -16,6 +16,7 @@
     </script>
 </head>
 <body>
+    <div id ="header"></div>
     <form id="form1" runat="server">
         <div>
             <img src ="images/generic-logo.jpg" class ="Logo" />
@@ -45,5 +46,6 @@
                 <asp:Button ID ="btnAdd" runat ="server" Text ="Add Request" style ="border-radius:4px"/>
         </div>
     </form>
+    <div id ="footer"></div>
 </body>
 </html>

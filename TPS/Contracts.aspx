@@ -22,7 +22,16 @@
     <img src ="images/generic-logo.jpg" class="Logo"/>
     </p>
     <form id="frmContracts" runat="server">
-        <div id ="Form">      
+        <div id ="Form">   
+            <p>
+                <img src ="images/staffrequestlist.png" class ="Icons"/>
+            </p>
+           <h1>Contracts List</h1>
+            <p>
+                <asp:GridView ID="grdViewContracts" runat="server" CssClass="Grid">
+                </asp:GridView>
+            </p>
+
         </div>
     </form>
     <div id ="footer"></div>

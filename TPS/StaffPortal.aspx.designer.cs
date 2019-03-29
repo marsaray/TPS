@@ -10,24 +10,15 @@
 namespace TPS {
     
     
-    public partial class Contracts {
+    public partial class StaffPortal {
         
         /// <summary>
-        /// frmContracts control.
+        /// frmStaffPortal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm frmContracts;
-        
-        /// <summary>
-        /// grdViewContracts control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdViewContracts;
+        protected global::System.Web.UI.HtmlControls.HtmlForm frmStaffPortal;
     }
 }

@@ -16,9 +16,10 @@
     </script>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <asp:LinkButton ID="lnkHome" runat="server" CssClass="Nav" PostBackUrl="~/Index.aspx">Home</asp:LinkButton>
-        <div>
+    <div id ="header"></div>
+    <form id="frmUserManagement" runat="server">
+        <div id ="Main">
+
             <img src="images/generic-logo.jpg" class="Logo" /><br />
             &nbsp;<img src="images/user.png" height="50" style="height: 86px; width: 92px" />
             <h1>User Management</h1>
@@ -59,6 +60,6 @@
             </p>
         </div>
     </form>
-
+    <div id ="footer"></div>
 </body>
 </html>

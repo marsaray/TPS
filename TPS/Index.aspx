@@ -22,6 +22,7 @@
     </script>
 </head>
 <body style="height: 720px; width: 1792px">
+    <div id ="header"></div>
     <form id="frmIndex" runat="server">
         <div id ="Main" style= "height: 663px; width: 1765px; margin-bottom: 61px;">
             <img src ="images/generic-logo.jpg" class="Logo" />
@@ -52,5 +53,6 @@
             </p>
         </div>
     </form>
+    <div id ="footer"></div>
 </body>
 </html>
