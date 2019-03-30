@@ -54,3 +54,8 @@
     float: initial;
     width: auto;
 }
+
+.Error{
+    color:red;
+    font-size: 26px;
+}

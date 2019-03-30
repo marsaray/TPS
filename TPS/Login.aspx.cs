@@ -14,12 +14,7 @@ namespace TPS
             // adding comment
         }
 
-        protected void btnSubmit_Click(object sender, EventArgs e)
-        {
-            //adding a comment
-        }
-
-        protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
+        protected void loginMain_Authenticate(object sender, AuthenticateEventArgs e)
         {
 
         }

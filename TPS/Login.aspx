@@ -23,10 +23,12 @@
         <br />
         <br />
         <br />
-        <asp:Login ID="Login1" runat="server" CssClass="Logo" OnAuthenticate="Login1_Authenticate">
-        </asp:Login>
+        <asp:Login ID="loginMain" runat="server" CssClass="Logo" OnAuthenticate="loginMain_Authenticate" />
         &nbsp;
     </form>
+    <br />
+    <br />
+    <br />
     <div id ="footer"></div>
 </body>
 

@@ -11,6 +11,12 @@ namespace TPS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            btnAddStaff.Attributes.Add("onclick", "return false;");
+            //how do we get btnAddStaff to work on click after the validation?
+        }
+
+        protected void btnAddStaff_Click(object sender, EventArgs e)
+        {
 
         }
     }

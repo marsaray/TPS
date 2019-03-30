@@ -15,7 +15,36 @@
             $("#header").load("addons/header.html");
             $("#footer").load("addons/footer.html");
         });
+
+        function doValidation() {
+            //Declare our variables for the function
+            let firstName;
+            let lastName;
+            let salary;
+            //regex variables to check the text
+            let regexName = /[0-9]/;
+            let regexCurrency = /[a-z]/;
+            //set the variables from the fields
+            firstName = $("#txtFirstName").val();
+            lastName = $("#txtLastName").val();
+            salary = $("#txtSalary").val();
+            //test to make sure all the fields are entered correctly
+            if (firstName === "" || regexName) {
+                $("#error").text("Please enter first name.");
+            }
+            else if (lastName === "" || regexName) {
+                $("#error").text("Please enter last name.");
+            }
+            else if (salary === "" || regexCurrency) {
+                $("#error").text("Please enter salary");
+            }
+            else {
+                $("#error").text("");
+                return true;
+            }
+        }
     </script>
+
 </head>
 <body>
     <div id="header"></div>
@@ -30,7 +59,7 @@
             <h1>Staff</h1>
             <h2>Add Staff</h2>
             <p>
-                <asp:Label runat="server" Text ="First Name: " CssClass ="Labels"></asp:Label>
+                <asp:Label runat="server" Text = "First Name: " CssClass ="Labels"></asp:Label>
                 &nbsp; <asp:TextBox runat="server" CssClass ="Inputs" ID="txtFirstName" Height="22px"></asp:TextBox>
             </p>
             <p>
@@ -52,7 +81,10 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox runat="server" CssClass ="Inputs" ID ="txtSalary"></asp:TextBox>
             </p>
             <p>
-                <asp:Button runat="server" Text="Add Staff" style="border-radius:2px"/>
+                <asp:Button runat="server" Text="Add Staff" ID="btnAddStaff" OnClientClick="doValidation()"/> <!-- on client click is where the script runs -->
+            </p>
+            <p>
+                <asp:Label runat ="server" ID ="error" CssClass ="Error"></asp:Label>
             </p>
             <h2>
                 Current Staff:
