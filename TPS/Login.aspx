@@ -20,6 +20,9 @@
     <form id="Login" runat="server">
         <img class="Logo" src="images/generic-logo.jpg" />
         &nbsp;
+        <br />
+        <br />
+        <br />
         <asp:Login ID="Login1" runat="server" CssClass="Logo" OnAuthenticate="Login1_Authenticate">
         </asp:Login>
         &nbsp;

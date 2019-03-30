@@ -25,7 +25,7 @@
     <div id ="header"></div>
     <form id="frmIndex" runat="server">
         <div id ="Main" style= "height: 755px; width: 1765px; margin-bottom: 61px;">
-            <asp:ImageButton ID="ImageButton1" runat="server" Height="133px" ImageUrl="images/generic-logo.jpg" PostBackUrl="~/Index.aspx" Width="537px" />
+            <asp:ImageButton ID="btnHome" runat="server" ImageUrl="images/generic-logo.jpg" PostBackUrl="~/Index.aspx" Width="537px" CssClass="Logo" />
 &nbsp;<h1>Navigation</h1>
             <p>
                 <asp:ImageButton ID="btnUser" runat="server" Height="50px" ImageUrl="~/images/user.png" Width="61px" CssClass="Images" OnClick="btnUser_Click" PostBackUrl="~/UserManagement.aspx" />
