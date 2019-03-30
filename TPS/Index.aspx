@@ -21,10 +21,10 @@
         });
     </script>
 </head>
-<body style="height: 798px; width: 1792px">
+<body style="height: 859px; width: 1792px">
     <div id ="header"></div>
     <form id="frmIndex" runat="server">
-        <div id ="Main" style= "height: 755px; width: 1765px; margin-bottom: 61px;">
+        <div id ="Main" style= "height: 832px; width: 1765px; margin-bottom: 61px;">
             <asp:ImageButton ID="btnHome" runat="server" ImageUrl="images/TPS_Logo_Small.jpg" PostBackUrl="~/Index.aspx" CssClass="Logo" />
 &nbsp;<h1>Navigation</h1>
             <p>
@@ -48,7 +48,7 @@
             </p>
             
             <p>
-                <asp:ImageButton ID="imgStaffRequestList" runat="server" CssClass="Images" Height="50px" ImageUrl="~/images/staffrequestlist.png" />
+                <asp:ImageButton ID="imgStaffRequestList" runat="server" CssClass="Images" Height="50px" ImageUrl="~/images/staffrequestlist.png" PostBackUrl="~/StaffingRequest.aspx" />
                 &nbsp;<asp:HyperLink ID ="lnkStaffRequestList" runat="server">Staff Request List</asp:HyperLink>            
             </p>
             <p>

@@ -135,6 +135,7 @@
     <Content Include="images\staffingrequest.jpg" />
     <Content Include="images\user.png" />
     <Content Include="Index.aspx" />
+    <Content Include="Scripts\Globals.js" />
     <Content Include="StaffingRequest.aspx" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -170,6 +171,7 @@
     <Content Include="Site.Master" />
     <Content Include="Staff.aspx" />
     <Content Include="StaffPortal.aspx" />
+    <Content Include="StaffRequestList.aspx" />
     <Content Include="UserManagement.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -233,6 +235,13 @@
     </Compile>
     <Compile Include="StaffPortal.aspx.designer.cs">
       <DependentUpon>StaffPortal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StaffRequestList.aspx.cs">
+      <DependentUpon>StaffRequestList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StaffRequestList.aspx.designer.cs">
+      <DependentUpon>StaffRequestList.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserManagement.aspx.cs">
       <DependentUpon>UserManagement.aspx</DependentUpon>

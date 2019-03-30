@@ -24,7 +24,7 @@
 &nbsp;</p>
         <div id ="Form">   
             <p>
-                <img src ="images/staffrequestlist.png" class ="Icons"/>
+                <img src ="images/contract.png" class ="Icons"/>
             </p>
            <h1>Requests List</h1>
             <p>

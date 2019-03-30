@@ -9,6 +9,7 @@
     </title>
     <link rel="stylesheet" type="text/css" href="CSS/main.css" />
     <script src ="Scripts/jquery-3.3.1.min.js"></script>
+    <script src ="Scripts/Globals.js"></script>
     <script>
         //Add the header and footer bars
         $(function () {
@@ -16,26 +17,26 @@
             $("#footer").load("addons/footer.html");
         });
 
+        //Generic validation function we will be using in all the forms
         function doValidation() {
             //Declare our variables for the function
             let firstName;
             let lastName;
             let salary;
             //regex variables to check the text
-            let regexName = /[0-9]/;
-            let regexCurrency = /[a-z]/;
+            //consider making these global
             //set the variables from the fields
             firstName = $("#txtFirstName").val();
             lastName = $("#txtLastName").val();
             salary = $("#txtSalary").val();
             //test to make sure all the fields are entered correctly
-            if (firstName == "" || firstName == regexName) {
+            if (firstName == "" || firstName == REGEXNAME) {
                 $("#error").text("Please enter first name.");
             }
-            else if (lastName == "" || lastName == regexName) {
+            else if (lastName == "" || lastName == REGEXNAME) {
                 $("#error").text("Please enter last name.");
             }
-            else if (salary == "" || salary == regexCurrency) {
+            else if (salary == "" || salary == REGEXCURRENCY) {
                 $("#error").text("Please enter salary");
             }
             else {
@@ -43,6 +44,7 @@
                 return true;
             }
         }
+
     </script>
 
 </head>
