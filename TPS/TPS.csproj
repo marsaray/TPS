@@ -49,6 +49,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
@@ -139,6 +140,17 @@
     <Content Include="Index.aspx" />
     <Content Include="Scripts\Globals.js" />
     <Content Include="StaffingRequest.aspx" />
+    <Content Include="App_Code\dsContracts.xsc">
+      <DependentUpon>dsContracts.xsd</DependentUpon>
+    </Content>
+    <None Include="App_Code\dsContracts.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsContracts.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="App_Code\dsContracts.xss">
+      <DependentUpon>dsContracts.xsd</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Login.aspx" />
@@ -181,6 +193,14 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\dsContracts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsContracts.xsd</DependentUpon>
+    </Content>
+    <Content Include="App_Code\dsContracts.cs">
+      <DependentUpon>dsContracts.xsd</DependentUpon>
+    </Content>
     <Compile Include="StaffingRequest.aspx.cs">
       <DependentUpon>StaffingRequest.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -188,7 +208,6 @@
     <Compile Include="StaffingRequest.aspx.designer.cs">
       <DependentUpon>StaffingRequest.aspx</DependentUpon>
     </Compile>
-    <Content Include="App_Code\clsBuisnessLayer.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Contracts.aspx.cs">
