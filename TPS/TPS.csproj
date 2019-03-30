@@ -128,6 +128,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="images\logo.bmp" />
     <Content Include="images\staffrequestlist.png" />
     <Content Include="images\contract.png" />
     <Content Include="images\generic-logo.jpg" />

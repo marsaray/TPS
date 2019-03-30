@@ -13,7 +13,7 @@
     <form id="frmStaff" runat="server">
         <div id ="Main">
             <p>
-                <asp:ImageButton runat="server" ID ="btnHome" ImageURL="~/images/generic-logo.jpg" PostBackURL="~/Index.aspx" CssClass ="Logo"/>
+                <asp:ImageButton runat="server" ID ="btnHome" ImageURL="~/images/logo.bmp" PostBackURL="~/Index.aspx" CssClass ="Logo"/>
             </p>
             <p>
                 <img src="images/staffrequestlist.png" class="Icons" />
