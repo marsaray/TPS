@@ -4,10 +4,11 @@ This project is released under a GNU General Public License.
 However, this project is also an academic work so no one may use this software in any way to unfairly or illegitimately to gain an advantage or cheat in a college course. This includes turning in this software for a grade with the intent to claim it as your own work. Please see the attached GNU license or find it online.
 ## Original Team
 There are five team members that must be talked about here that helped develop this project and maintain it.
-- Nathaniel Perez
-- Derrick Williams
-- Carlos Guillot
-- Eddie Barragan
+- Nathaniel Perez (Form Designer and Documentation Manager)
+- Derrick Williams (Quality Assurance and Testing Manager)
+- Carlos Guillot (Database Developer and Manager)
+- Eddie Barragan (Logic Layer Developer and Manager)
+- Markus Reynolds (Full Stack Designer and Programmer, Team Lead)
 ## Purpose
 This is an academic project for a college course. However, the team treated it as though it were a real life product that we were creating for a real consumer. There are several use cases that we will explain in detail in other documentation. I also hope that we could use this project as a great starting off point for people interested in learning the fundamentals of full-stack web development. 
 ## Website information
