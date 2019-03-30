@@ -18,7 +18,7 @@
 </head>
 <body>
     <form id="Login" runat="server">
-        <img class="Logo" src="images/generic-logo.jpg" />
+        <img class="Logo" src="images/TPS_Logo_Small.jpg" />
         &nbsp;
         <br />
         <br />

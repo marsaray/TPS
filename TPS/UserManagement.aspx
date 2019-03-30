@@ -20,7 +20,7 @@
     <form id="frmUserManagement" runat="server">
         <div id ="Main">
 
-            <asp:ImageButton ID="ImageButton1" runat="server" Height="133px" ImageUrl="images/generic-logo.jpg" PostBackUrl="~/Index.aspx" Width="537px" />
+            <asp:ImageButton ID="ImageButton1" runat="server" Height="133px" ImageUrl="images/TPS_Logo_Small.jpg" PostBackUrl="~/Index.aspx" Width="537px" />
             <br />
             &nbsp;<img src="images/user.png" height="50" style="height: 86px; width: 92px" />
             <h1>User Management</h1>

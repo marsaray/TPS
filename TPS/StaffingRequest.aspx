@@ -19,7 +19,7 @@
     <div id ="header"></div>
     <form id="form1" runat="server">
         <div>
-            <asp:ImageButton ID="btnHome" runat="server" Height="133px" ImageUrl="images/generic-logo.jpg" PostBackUrl="~/Index.aspx" Width="537px" CssClass="Logo" />
+            <asp:ImageButton ID="btnHome" runat="server" Height="133px" ImageUrl="images/TPS_Logo_Small.jpg" PostBackUrl="~/Index.aspx" Width="537px" CssClass="Logo" />
 &nbsp;<br />
             <img src ="images/staffingrequest.jpg" style=" height: 86px; width: 92px" />
             <br />
