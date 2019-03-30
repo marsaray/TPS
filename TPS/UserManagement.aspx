@@ -13,6 +13,24 @@
             $("#header").load("addons/header.html");
             $("#footer").load("addons/footer.html");
         });
+        function doValidation{
+            //Function Scope Variables
+            let userName;
+            let password;
+            //Assignment
+            firstName = $("#txtUserName").val();
+            password = $("#txtPassword").val();
+            //Test
+            if (firstName == "" || REGEXNAME) {
+                $("#error").text = "Please input a user name";
+            }
+            else if (password == "") {
+                $("#error").text = "Please input a password";
+            }
+            else {
+                $("#error").text = ""
+            }
+        }
     </script>
 </head>
 <body>
@@ -45,7 +63,7 @@
                 </asp:DropDownList>
             </p>
             <p>
-                <asp:Button ID="btnAddUser" runat="server" Text="Add" OnClick="btnAddUser_Click" />
+                <asp:Button ID="btnAddUser" runat="server" Text="Add" OnClientClick="doValidation()" OnClick="btnAddUser_Click" />
             </p>
             <h3>Current Users:</h3>
         </div>

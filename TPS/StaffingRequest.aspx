@@ -13,6 +13,29 @@
             $("#header").load("addons/header.html");
             $("#footer").load("addons/footer.html");
         });
+        function doValidation() {
+            //Function Variable Scope
+            let clientID;
+            let type;
+            let location;
+            //Assignment
+            clientID = $("#txtClientID").val();
+            type = $("#txtType").val();
+            location = $("#txtLocation").val();
+            //Checks
+            if (clientID == "" || clientID == REGEXNAME) {
+                $("#error").text = "Please enter your ClientID";
+            }
+            else if (type == "" || type == REGEXNAME) {
+                $("#error").text = "Please enter type";
+            }
+            else if (location == "" || location == REGEXNAME) {
+                $("#error").text = "Please enter location";
+            }
+            else {
+                $("#error").text = "";
+            }
+        }
     </script>
 </head>
 <body>
@@ -21,7 +44,7 @@
         <div>
             <asp:ImageButton ID="btnHome" runat="server" ImageUrl="images/TPS_Logo_Small.jpg" PostBackUrl="~/Index.aspx" CssClass="Logo" />
 &nbsp;<br />
-            <img src ="images/staffingrequest.jpg" style=" height: 86px; width: 92px" />
+            <img src ="images/staffingrequest.jpg" class="Icons" />
             <br />
             <h1>Staffing Request</h1>
             <p>
@@ -43,7 +66,7 @@
             </p>
             <!-- Microsoft buttons are very ugly, can I change this to make it look better? 
                 TODO: 1. Make Prettier Buttons-->
-                <asp:Button ID ="btnAdd" runat ="server" Text ="Add Request" style ="border-radius:4px"/>
+                <asp:Button ID ="btnAdd" runat ="server" Text ="Add Request" OnClientClick ="doValidation()"/>
         </div>
     </form>
     <div id ="footer"></div>

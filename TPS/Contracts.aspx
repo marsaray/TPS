@@ -13,6 +13,7 @@
             $("#header").load("addons/header.html");
             $("#footer").load("addons/footer.html");
         });
+        //No validation needed
     </script>
 </head>
     <!-- This is the contract form that will show the contract database -->

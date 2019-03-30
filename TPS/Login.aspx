@@ -14,6 +14,7 @@
         $(function () {
             $("#footer").load("addons/footer.html");
         });
+        //Use Built in Validation
     </script>
 </head>
 <body>
@@ -23,7 +24,7 @@
         <br />
         <br />
         <br />
-        <asp:Login ID="loginMain" runat="server" CssClass="Logo" OnAuthenticate="loginMain_Authenticate" />
+        <asp:Login ID="loginMain" runat="server" CssClass="Logo" OnAuthenticate="loginMain_Authenticate" DestinationPageUrl="~/Index.aspx" RememberMeSet="True" />
         &nbsp;
     </form>
     <br />

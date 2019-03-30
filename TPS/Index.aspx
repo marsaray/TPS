@@ -19,6 +19,7 @@
             $("#header").load("addons/header.html");
             $("#footer").load("addons/footer.html");
         });
+        //No Validation needed
     </script>
 </head>
 <body style="height: 859px; width: 1792px">
