@@ -29,13 +29,13 @@
             lastName = $("#txtLastName").val();
             salary = $("#txtSalary").val();
             //test to make sure all the fields are entered correctly
-            if (firstName === "" || regexName) {
+            if (firstName == "" || firstName == regexName) {
                 $("#error").text("Please enter first name.");
             }
-            else if (lastName === "" || regexName) {
+            else if (lastName == "" || lastName == regexName) {
                 $("#error").text("Please enter last name.");
             }
-            else if (salary === "" || regexCurrency) {
+            else if (salary == "" || salary == regexCurrency) {
                 $("#error").text("Please enter salary");
             }
             else {
