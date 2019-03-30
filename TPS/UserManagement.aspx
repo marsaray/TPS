@@ -13,7 +13,7 @@
             $("#header").load("addons/header.html");
             $("#footer").load("addons/footer.html");
         });
-        function doValidation{
+        function doValidation(){
             //Function Scope Variables
             let userName;
             let password;
