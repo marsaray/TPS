@@ -20,7 +20,7 @@
     <div id ="header"></div>
     <form id="frmContracts" runat="server">
     <p>
-        <asp:ImageButton ID="btnHome" runat="server" ImageUrl="images/generic-logo.jpg" PostBackUrl="~/Index.aspx" Width="537px" CssClass="Logo" />
+        <asp:ImageButton ID="btnHome" runat="server" ImageUrl="images/TPS_Logo_Small.jpg" PostBackUrl="~/Index.aspx" Width="537px" CssClass="Logo" />
 &nbsp;</p>
         <div id ="Form">   
             <p>
