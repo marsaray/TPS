@@ -96,7 +96,7 @@
                 Current Staff:
             </h2>
             <p>
-                <asp:GridView runat="server" CssClass ="Grid"></asp:GridView>
+                <asp:GridView runat="server" ID="grdViewStaff" CssClass ="Grid"></asp:GridView>
             </p>
         </div>
     </form>

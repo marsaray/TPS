@@ -15,6 +15,12 @@ namespace TPS
         {
             //btnAddStaff.Attributes.Add("onclick", "return false;");
             //how do we get btnAddStaff to work on click after the validation?
+            dsStaff myDataSet = new dsStaff();
+            myDataSet = clsDataLayer.GetStaff(Server.MapPath("TPS.accdb"));
+            //set the datagrid to datasource based on table
+            grdViewStaff.DataSource = myDataSet.Tables["tblStaffMember"];
+            //binds the datagrid
+            grdViewStaff.DataBind();
         }
 
         protected void btnAddStaff_Click(object sender, EventArgs e)
