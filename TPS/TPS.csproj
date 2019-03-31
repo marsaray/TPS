@@ -143,6 +143,17 @@
     <Content Include="App_Code\dsContracts.xsc">
       <DependentUpon>dsContracts.xsd</DependentUpon>
     </Content>
+    <Content Include="App_Code\dsStaff.xsc">
+      <DependentUpon>dsStaff.xsd</DependentUpon>
+    </Content>
+    <None Include="App_Code\dsStaff.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsStaff.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="App_Code\dsStaff.xss">
+      <DependentUpon>dsStaff.xsd</DependentUpon>
+    </Content>
     <None Include="App_Code\dsContracts.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -200,6 +211,11 @@
     </Content>
     <Content Include="App_Code\dsContracts.cs">
       <DependentUpon>dsContracts.xsd</DependentUpon>
+    </Content>
+    <Content Include="App_Code\dsStaff.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsStaff.xsd</DependentUpon>
     </Content>
     <Compile Include="StaffingRequest.aspx.cs">
       <DependentUpon>StaffingRequest.aspx</DependentUpon>

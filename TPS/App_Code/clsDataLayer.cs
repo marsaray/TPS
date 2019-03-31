@@ -1,4 +1,10 @@
-﻿using System;
+﻿//Data Layer Code TPS Website
+//Programmed by: Markus Reynolds
+//3/31/2019
+//Open source avaiable under GNU License
+//A GNU License is avaiable in the documentation for this code but you can also find it online
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +19,36 @@ namespace TPS.App_Code
 {
     public class clsDataLayer
     {
+        public static bool SaveStaff(string Database, string FirstName, string LastName, string EduLevel, string Experience,string Salary)
+        {
+            bool recordSaved;
+            OleDbTransaction myTransaction = null;
+            try
+            {
+                OleDbConnection conn = new OleDbConnection("PROVIDER=Microsoft.ACE.OLEDB.12.0;" +
+                    "Data Source=" + Database);
+                conn.Open();
+                OleDbCommand command = conn.CreateCommand();
+                string strSQL;
+                myTransaction = conn.BeginTransaction();
+                command.Transaction = myTransaction;
+                strSQL = "Insert into tblStaffMember (FirstName ,LastName ,EduLevel,Experience,Salary) values ('" + FirstName + "','"
+                    + LastName + "','"
+                    + EduLevel + "','" + Experience + "','" + Salary + "' )";
+                command.CommandType = CommandType.Text;
+                command.CommandText = strSQL;
+                command.ExecuteNonQuery();
+                myTransaction.Commit();
+                conn.Close();
+                recordSaved = true;
+            }
+            catch (Exception ex)
+            {
+                myTransaction.Rollback();
+                recordSaved = false;
+            }
+            return recordSaved;
+        }
         /*
         // This function verifies a user in the tblUser table
         public static dsUserLogin VerifyUser(string Database, string UserName, string UserPassword)

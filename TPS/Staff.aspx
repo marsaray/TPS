@@ -78,6 +78,10 @@
                     <asp:ListItem Value="4">Some College</asp:ListItem>
                 </asp:DropDownList>
             </p>
+             <p>
+                 <asp:Label runat="server" Text ="Experience: " CssClass ="Labels"></asp:Label>
+                &nbsp; <asp:TextBox runat="server" CssClass ="Inputs" ID ="txtExperience"></asp:TextBox>
+            </p>
             <p>
                 <asp:Label runat="server" Text ="Salary: " CssClass ="Labels"></asp:Label>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox runat="server" CssClass ="Inputs" ID ="txtSalary"></asp:TextBox>

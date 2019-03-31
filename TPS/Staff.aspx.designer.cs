@@ -58,6 +58,15 @@ namespace TPS {
         protected global::System.Web.UI.WebControls.DropDownList drpEduLevel;
         
         /// <summary>
+        /// txtExperience control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtExperience;
+        
+        /// <summary>
         /// txtSalary control.
         /// </summary>
         /// <remarks>

@@ -74,7 +74,7 @@
             <p>
                 <asp:GridView runat="server" ID="grdViewSearch" CssClass="Grid">
                     <Columns>
-                        <asp:ButtonField ButtonType="Button" HeaderText="Add Staff to Request" ShowHeader="True" Text="Add" />
+                        <asp:ButtonField ButtonType="Button" HeaderText="Add Staff to Request" ShowHeader="True" Text="Add" CommandName="addStaff" />
                     </Columns>
                 </asp:GridView>
             </p>
