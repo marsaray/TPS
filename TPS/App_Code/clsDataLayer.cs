@@ -11,7 +11,6 @@ using System.Web;
 using System.Data.OleDb;
 using System.Net;
 using System.Data;
-
 /// this is code from my other class I'm using as a guide
 /// we will be basically using this as it's perfectly good for getting items from a database
 
@@ -42,8 +41,7 @@ namespace TPS.App_Code
                 command.ExecuteNonQuery();
                 myTransaction.Commit();
                 conn.Close();
-                recordSaved = true;
-                Console.Write("Test");
+                recordSaved = true; 
             }
             catch (Exception ex)
             {
@@ -51,6 +49,22 @@ namespace TPS.App_Code
                 recordSaved = false;
             }
             return recordSaved;
+        }
+
+        public static dsStaff GetStaff(string Database)
+        {
+            dsStaff DS;
+            //we call objects of the classes
+            OleDbConnection sqlConn;
+            OleDbDataAdapter sqlDA;
+            //we use the methods to create messages and connect to the database
+            sqlConn = new OleDbConnection("PROVIDER = Microsoft.ACE.OLEDB.12.0;" + "Data Source =" + Database);
+            sqlDA = new OleDbDataAdapter("select * from tblStaffMember", sqlConn);
+            //new object of the DS class
+            DS = new dsStaff();
+            // method of sqlDA class to fill the table
+            sqlDA.Fill(DS.tblStaffMember);
+            return DS;
         }
 
         /*

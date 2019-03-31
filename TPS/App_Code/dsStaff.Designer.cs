@@ -409,7 +409,7 @@ namespace TPS.App_Code {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public tblStaffMemberRow AddtblStaffMemberRow(string FirstName, string LastName, short EduLevel, short Experience, decimal Salary) {
+            public tblStaffMemberRow AddtblStaffMemberRow(string FirstName, string LastName, string EduLevel, short Experience, decimal Salary) {
                 tblStaffMemberRow rowtblStaffMemberRow = ((tblStaffMemberRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -464,7 +464,7 @@ namespace TPS.App_Code {
                 base.Columns.Add(this.columnFirstName);
                 this.columnLastName = new global::System.Data.DataColumn("LastName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLastName);
-                this.columnEduLevel = new global::System.Data.DataColumn("EduLevel", typeof(short), null, global::System.Data.MappingType.Element);
+                this.columnEduLevel = new global::System.Data.DataColumn("EduLevel", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEduLevel);
                 this.columnExperience = new global::System.Data.DataColumn("Experience", typeof(short), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnExperience);
@@ -479,6 +479,7 @@ namespace TPS.App_Code {
                 this.columnMemberID.Unique = true;
                 this.columnFirstName.MaxLength = 60;
                 this.columnLastName.MaxLength = 60;
+                this.columnEduLevel.MaxLength = 255;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -664,10 +665,10 @@ namespace TPS.App_Code {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public short EduLevel {
+            public string EduLevel {
                 get {
                     try {
-                        return ((short)(this[this.tabletblStaffMember.EduLevelColumn]));
+                        return ((string)(this[this.tabletblStaffMember.EduLevelColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'EduLevel\' in table \'tblStaffMember\' is DBNull.", e);
@@ -939,27 +940,27 @@ namespace TPS.App_Code.dsStaffTableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM `Staff Member` WHERE ((`MemberID` = ?))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM `tblStaffMember` WHERE ((`MemberID` = ?))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_MemberID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "MemberID", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `Staff Member` (`FirstName`, `LastName`, `EduLevel`, `Experience`, `S" +
-                "alary`) VALUES (?, ?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO `tblStaffMember` (`FirstName`, `LastName`, `EduLevel`, `Experience`, " +
+                "`Salary`) VALUES (?, ?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("FirstName", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FirstName", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("LastName", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LastName", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("EduLevel", global::System.Data.OleDb.OleDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EduLevel", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("EduLevel", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EduLevel", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Experience", global::System.Data.OleDb.OleDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Experience", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Salary", global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Salary", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE `Staff Member` SET `FirstName` = ?, `LastName` = ?, `EduLevel` = ?, `Exper" +
-                "ience` = ?, `Salary` = ? WHERE ((`MemberID` = ?))";
+            this._adapter.UpdateCommand.CommandText = "UPDATE `tblStaffMember` SET `FirstName` = ?, `LastName` = ?, `EduLevel` = ?, `Exp" +
+                "erience` = ?, `Salary` = ? WHERE ((`MemberID` = ?))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("FirstName", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FirstName", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("LastName", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LastName", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("EduLevel", global::System.Data.OleDb.OleDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EduLevel", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("EduLevel", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EduLevel", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Experience", global::System.Data.OleDb.OleDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Experience", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Salary", global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Salary", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_MemberID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "MemberID", global::System.Data.DataRowVersion.Original, false, null));
@@ -978,8 +979,8 @@ namespace TPS.App_Code.dsStaffTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT MemberID, FirstName, LastName, EduLevel, Experience, Salary FROM [Staff Me" +
-                "mber]";
+            this._commandCollection[0].CommandText = "SELECT MemberID, FirstName, LastName, EduLevel, Experience, Salary FROM tblStaffM" +
+                "ember";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1062,37 +1063,27 @@ namespace TPS.App_Code.dsStaffTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string FirstName, string LastName, global::System.Nullable<short> EduLevel, global::System.Nullable<short> Experience, global::System.Nullable<decimal> Salary) {
+        public virtual int Insert(string FirstName, string LastName, string EduLevel, short Experience, decimal Salary) {
             if ((FirstName == null)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("FirstName");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(FirstName));
             }
             if ((LastName == null)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("LastName");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(LastName));
             }
-            if ((EduLevel.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((short)(EduLevel.Value));
+            if ((EduLevel == null)) {
+                throw new global::System.ArgumentNullException("EduLevel");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(EduLevel));
             }
-            if ((Experience.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((short)(Experience.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            if ((Salary.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((decimal)(Salary.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
+            this.Adapter.InsertCommand.Parameters[3].Value = ((short)(Experience));
+            this.Adapter.InsertCommand.Parameters[4].Value = ((decimal)(Salary));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1113,37 +1104,27 @@ namespace TPS.App_Code.dsStaffTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string FirstName, string LastName, global::System.Nullable<short> EduLevel, global::System.Nullable<short> Experience, global::System.Nullable<decimal> Salary, int Original_MemberID) {
+        public virtual int Update(string FirstName, string LastName, string EduLevel, short Experience, decimal Salary, int Original_MemberID) {
             if ((FirstName == null)) {
-                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("FirstName");
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(FirstName));
             }
             if ((LastName == null)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("LastName");
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(LastName));
             }
-            if ((EduLevel.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((short)(EduLevel.Value));
+            if ((EduLevel == null)) {
+                throw new global::System.ArgumentNullException("EduLevel");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(EduLevel));
             }
-            if ((Experience.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((short)(Experience.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            if ((Salary.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((decimal)(Salary.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((short)(Experience));
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((decimal)(Salary));
             this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_MemberID));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
