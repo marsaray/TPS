@@ -31,7 +31,7 @@
                   </DbCommand>
                 </InsertCommand>
                 <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>SELECT MemberID, FirstName, LastName, EduLevel, Experience, Salary FROM tblStaffMember</CommandText>
                     <Parameters />
                   </DbCommand>

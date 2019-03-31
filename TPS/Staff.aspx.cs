@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using static TPS.App_Code.clsDataLayer;
 
 
+
 namespace TPS
 {
     public partial class Staff : System.Web.UI.Page
@@ -16,7 +17,7 @@ namespace TPS
             //btnAddStaff.Attributes.Add("onclick", "return false;");
             //how do we get btnAddStaff to work on click after the validation?
             dsStaff myDataSet = new dsStaff();
-            myDataSet = clsDataLayer.GetStaff(Server.MapPath("TPS.accdb"));
+            myDataSet = GetStaff(Server.MapPath("TPS.accdb"));
             //set the datagrid to datasource based on table
             grdViewStaff.DataSource = myDataSet.Tables["tblStaffMember"];
             //binds the datagrid
@@ -25,7 +26,6 @@ namespace TPS
 
         protected void btnAddStaff_Click(object sender, EventArgs e)
         {
-            error.Text = "TEST";
             string FirstName = txtFirstName.Text;
             string LastName = txtLastName.Text;
             string EduLevel = drpEduLevel.SelectedValue;
