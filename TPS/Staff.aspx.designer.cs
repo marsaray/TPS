@@ -10,7 +10,7 @@
 namespace TPS {
     
     
-    public partial class StaffPortal {
+    public partial class Staff {
         
         /// <summary>
         /// frmStaff control.

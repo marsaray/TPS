@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="dsStaff" targetNamespace="http://tempuri.org/dsStaff.xsd" xmlns:mstns="http://tempuri.org/dsStaff.xsd" xmlns="http://tempuri.org/dsStaff.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -66,10 +66,10 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+  <xs:element name="dsStaff" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsStaff" msprop:Generator_UserDSName="dsStaff">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="tblStaffMember" msprop:Generator_TableClassName="tblStaffMemberDataTable" msprop:Generator_TableVarName="tabletblStaffMember" msprop:Generator_RowChangedName="tblStaffMemberRowChanged" msprop:Generator_TablePropName="tblStaffMember" msprop:Generator_RowDeletingName="tblStaffMemberRowDeleting" msprop:Generator_RowChangingName="tblStaffMemberRowChanging" msprop:Generator_RowEvHandlerName="tblStaffMemberRowChangeEventHandler" msprop:Generator_RowDeletedName="tblStaffMemberRowDeleted" msprop:Generator_RowClassName="tblStaffMemberRow" msprop:Generator_UserTableName="tblStaffMember" msprop:Generator_RowEvArgName="tblStaffMemberRowChangeEvent">
+        <xs:element name="tblStaffMember" msprop:Generator_TableClassName="tblStaffMemberDataTable" msprop:Generator_TableVarName="tabletblStaffMember" msprop:Generator_TablePropName="tblStaffMember" msprop:Generator_RowDeletingName="tblStaffMemberRowDeleting" msprop:Generator_RowChangingName="tblStaffMemberRowChanging" msprop:Generator_RowEvHandlerName="tblStaffMemberRowChangeEventHandler" msprop:Generator_RowDeletedName="tblStaffMemberRowDeleted" msprop:Generator_UserTableName="tblStaffMember" msprop:Generator_RowChangedName="tblStaffMemberRowChanged" msprop:Generator_RowEvArgName="tblStaffMemberRowChangeEvent" msprop:Generator_RowClassName="tblStaffMemberRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MemberID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnMemberID" msprop:Generator_ColumnPropNameInRow="MemberID" msprop:Generator_ColumnPropNameInTable="MemberIDColumn" msprop:Generator_UserColumnName="MemberID" type="xs:int" />

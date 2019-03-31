@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Staff.aspx.cs" Inherits="TPS.StaffPortal" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Staff.aspx.cs" Inherits="TPS.Staff" %>
 
 <!DOCTYPE html>
 
@@ -87,7 +87,7 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox runat="server" CssClass ="Inputs" ID ="txtSalary"></asp:TextBox>
             </p>
             <p>
-                <asp:Button runat="server" Text="Add Staff" ID="btnAddStaff" OnClientClick="doValidation()"/> <!-- on client click is where the script runs -->
+                <asp:Button runat="server" Text="Add Staff" ID="btnAddStaff" OnClick="btnAddStaff_Click"/> <!-- on client click is where the script runs -->
             </p>
             <p>
                 <asp:Label runat ="server" ID ="error" CssClass ="Error"></asp:Label>

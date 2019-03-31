@@ -32,15 +32,18 @@ namespace TPS.App_Code
                 string strSQL;
                 myTransaction = conn.BeginTransaction();
                 command.Transaction = myTransaction;
-                strSQL = "Insert into tblStaffMember (FirstName ,LastName ,EduLevel,Experience,Salary) values ('" + FirstName + "','"
+                Console.Write("test");
+                strSQL = "Insert into tblStaffMember (FirstName ,LastName ,EduLevel,Experience,Salary) " 
+                    + "values ('" + FirstName + "','"
                     + LastName + "','"
-                    + EduLevel + "','" + Experience + "','" + Salary + "' )";
+                    + EduLevel + "','" + Experience + "','" + Salary + "' ) ";
                 command.CommandType = CommandType.Text;
                 command.CommandText = strSQL;
                 command.ExecuteNonQuery();
                 myTransaction.Commit();
                 conn.Close();
                 recordSaved = true;
+                Console.Write("Test");
             }
             catch (Exception ex)
             {
@@ -49,6 +52,7 @@ namespace TPS.App_Code
             }
             return recordSaved;
         }
+
         /*
         // This function verifies a user in the tblUser table
         public static dsUserLogin VerifyUser(string Database, string UserName, string UserPassword)

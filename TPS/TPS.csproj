@@ -143,6 +143,14 @@
     <Content Include="App_Code\dsContracts.xsc">
       <DependentUpon>dsContracts.xsd</DependentUpon>
     </Content>
+    <None Include="App_Code\dsContracts.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsContracts.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="App_Code\dsContracts.xss">
+      <DependentUpon>dsContracts.xsd</DependentUpon>
+    </Content>
     <Content Include="App_Code\dsStaff.xsc">
       <DependentUpon>dsStaff.xsd</DependentUpon>
     </Content>
@@ -153,14 +161,6 @@
     </None>
     <Content Include="App_Code\dsStaff.xss">
       <DependentUpon>dsStaff.xsd</DependentUpon>
-    </Content>
-    <None Include="App_Code\dsContracts.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dsContracts.Designer.cs</LastGenOutput>
-    </None>
-    <Content Include="App_Code\dsContracts.xss">
-      <DependentUpon>dsContracts.xsd</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />

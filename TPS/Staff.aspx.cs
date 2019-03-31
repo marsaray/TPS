@@ -9,16 +9,17 @@ using static TPS.App_Code.clsDataLayer;
 
 namespace TPS
 {
-    public partial class StaffPortal : System.Web.UI.Page
+    public partial class Staff : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            btnAddStaff.Attributes.Add("onclick", "return false;");
+            //btnAddStaff.Attributes.Add("onclick", "return false;");
             //how do we get btnAddStaff to work on click after the validation?
         }
 
         protected void btnAddStaff_Click(object sender, EventArgs e)
         {
+            error.Text = "TEST";
             string FirstName = txtFirstName.Text;
             string LastName = txtLastName.Text;
             string EduLevel = drpEduLevel.SelectedValue;
