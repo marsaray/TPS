@@ -16,7 +16,7 @@
             $("#header").load("addons/header.html");
             $("#footer").load("addons/footer.html");
         });
-
+        //Use this commit
         //Generic validation function we will be using in all the forms
         function doValidation() {
             //Declare our variables for the function
