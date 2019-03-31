@@ -66,7 +66,28 @@
             </p>
             <!-- Microsoft buttons are very ugly, can I change this to make it look better? 
                 TODO: 1. Make Prettier Buttons-->
-                <asp:Button ID ="btnAdd" runat ="server" Text ="Add Request" OnClientClick ="doValidation()"/>
+            <asp:Button ID="btnSearch" runat="server" Text="Search" OnClientClick="doValidation()" />
+            <br />
+            <h3>
+                Your Results:
+            </h3>
+            <p>
+                <asp:GridView runat="server" ID="grdViewSearch" CssClass="Grid">
+                    <Columns>
+                        <asp:ButtonField ButtonType="Button" HeaderText="Add Staff to Request" ShowHeader="True" Text="Add" />
+                    </Columns>
+                </asp:GridView>
+            </p>
+            <h3>
+                Your Request:
+            </h3>
+            <p>
+                <asp:GridView runat="server" ID="grdViewRequest" CssClass="Grid">
+                    <Columns>
+                        <asp:CommandField ButtonType="Button" HeaderText="Delete Staff from Request" ShowDeleteButton="True" />
+                    </Columns>
+                </asp:GridView>
+            </p>
         </div>
     </form>
     <div id ="footer"></div>
