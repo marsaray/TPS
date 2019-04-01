@@ -9,7 +9,7 @@ using System.Web.SessionState;
 //I've made a change to the program
 namespace TPS
 {
-    public class Global : HttpApplication
+    public partial class Global : HttpApplication
     {
         void Application_Start(object sender, EventArgs e)
         {
