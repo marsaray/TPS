@@ -38,7 +38,7 @@
     <form id="frmUserManagement" runat="server">
         <div id ="Main">
 
-            <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="images/TPS_Logo_Small.jpg" PostBackUrl="~/Index.aspx" />
+            <asp:ImageButton ID="btnHome" runat="server" ImageUrl="images/TPS_Logo_Small.jpg" PostBackUrl="~/Index.aspx" />
             <br />
             &nbsp;<img src="images/user.png" height="50" style="height: 86px; width: 92px" />
             <h1>User Management</h1>

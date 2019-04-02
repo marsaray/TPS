@@ -53,7 +53,7 @@
     <form id="frmStaff" runat="server">
         <div id="Form">
             <p>
-                <asp:ImageButton ID="imgHome" runat="server" ImageUrl="images/TPS_Logo_Small.jpg" PostBackUrl="~/Index.aspx" CssClass="Logo" />
+                <asp:ImageButton ID="btnHome" runat="server" ImageUrl="images/TPS_Logo_Small.jpg" PostBackUrl="~/Index.aspx" CssClass="Logo" />
 &nbsp;</p>
             <p>
                 <img src ="images/staff.jpg" class ="Icons" />

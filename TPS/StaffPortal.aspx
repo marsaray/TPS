@@ -21,7 +21,7 @@
         <div id="header"></div>
         <div id="Main">
             <p>
-                <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="images/TPS_Logo_Small.jpg" PostBackUrl="~/Index.aspx" />
+                <asp:ImageButton ID="btnHome" runat="server" ImageUrl="images/TPS_Logo_Small.jpg" PostBackUrl="~/Index.aspx" />
             </p>
             <p>
                 <img src="images/staff.jpg" class="Icons" />

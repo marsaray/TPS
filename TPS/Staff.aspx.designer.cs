@@ -22,13 +22,13 @@ namespace TPS {
         protected global::System.Web.UI.HtmlControls.HtmlForm frmStaff;
         
         /// <summary>
-        /// imgHome control.
+        /// btnHome control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton imgHome;
+        protected global::System.Web.UI.WebControls.ImageButton btnHome;
         
         /// <summary>
         /// txtFirstName control.
